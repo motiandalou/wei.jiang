@@ -1,0 +1,121 @@
+.job-cards {
+  margin-top: 0.1761rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.0781rem;
+}
+
+.job-cards .card {
+  box-shadow: 0 0.0586rem 0.1367rem rgba(0, 0, 0, 0.1);
+  padding: 0.0881rem 0.0881rem 0.0881rem 0.0881rem;
+  border: 0.0078rem solid #f2f2f2;
+  border-radius: 0.0586rem;
+}
+
+.job-cards .card:hover {
+  box-shadow: none;
+}
+
+.job-cards .card .card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.job-cards .card .card-header > i {
+  font-size: 0.0938rem;
+  color: #a4a8ac;
+  cursor: pointer;
+}
+
+.job-cards .card .card-header > i:hover {
+  color: #111;
+}
+
+.job-cards .card .card-header .job-info {
+  display: flex;
+  gap: 0.0391rem;
+  font-size: 0.0781rem;
+}
+
+.job-cards .card .card-header .job-info i {
+  font-size: 0.1828rem;
+  background: #f2f2f2;
+  width: 0.2539rem;
+  height: 0.2639rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.0704rem;
+}
+
+.job-cards .card .card-header .job-info h5 {
+  font-weight: 500;
+}
+
+.job-cards .card .card-header .job-info h5 span {
+  font-size: 0.0703rem;
+  color: #a4a8ac;
+}
+
+.job-cards .card .card-header .job-info a {
+  font-weight: bold;
+  font-size: 0.0703rem;
+  margin-top: 0.0586rem;
+}
+
+.job-cards .card .card-header .job-info p {
+  font-size: 0.0855rem;
+}
+
+.job-cards .card .card-tags {
+  margin: 0.0781rem 0;
+  display: flex;
+  gap: 0.0391rem;
+}
+
+.job-cards .card .card-tags span {
+  font-size: 0.0915rem;
+  background: #f2f2f2;
+  padding: 0.0352rem;
+  border-radius: 0.0282rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.job-cards .card .card-desc {
+  font-size: 0.0781rem;
+  color: #a4a8ac;
+  line-height: 1.5;
+  height: 0.2535rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-bottom: 0.0704rem;
+}
+
+/* 翻页 */
+.pagination {
+  position: fixed;
+  top: 10%;
+  right: 1%;
+  display: flex;
+  list-style: none;
+  // padding: 0.0704rem;
+  color: #111;
+}
+.ant-pagination-item {
+  // margin: 0 0.0352rem;
+  // padding: 0.0211rem 0.0704rem;
+  // border: 0.007rem solid #f2f2f2;
+  // border-radius: 0.0352rem;
+  // font-size: 0.1268rem;
+  // background-color: #e7e7e7;
+  // color: red;
+}
+.ant-pagination-item-active {
+  // background-color: #000;
+  // color: white;
+  // border-color: red;
+}

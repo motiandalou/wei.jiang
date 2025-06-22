@@ -1,0 +1,89 @@
+.img-box {
+  height: 60px;
+  display: flex;
+  color: #142038;
+  margin-left: 20px;
+  align-items: center;
+
+  .header-img {
+    width: 44px;
+    height: 44px;
+    display: inline;
+    border-radius: 50%;
+    border: 1px solid var(--keptdata-nav-head-border);
+    //鼠标滑动到头像,出现边框
+    &:hover {
+      border-color: var(--keptdata-nav-head-hover-border);
+    }
+  }
+
+  .is-header-img {
+    position: absolute;
+    top: 58px;
+    right: 30px;
+    z-index: 13;
+    width: 240px;
+    border-radius: 4px;
+    background: #ffffff;
+    box-shadow: 0 0 12px 0 rgba(20, 32, 56, 0.15);
+
+    .user-new {
+      display: flex;
+      align-items: center;
+      padding: 20px 32px 0;
+
+      .img-container {
+        margin-left: 5px;
+
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+      }
+
+      .user-name {
+        color: var(--keptdata-default-text);
+        font-size: 18px;
+        overflow: hidden;
+        font-weight: bold;
+        margin-left: 20px;
+        line-height: normal;
+      }
+    }
+
+    .select-lang {
+      margin: 15px 0px;
+      line-height: normal;
+
+      .select-lang-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .ant-btn {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .modify {
+      cursor: pointer;
+
+      .border {
+        border-top: 1px solid #e6eaf1;
+      }
+
+      div {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        line-height: normal;
+        justify-content: center;
+
+        &:hover {
+          background-color: var(--keptdata-column-hover);
+        }
+      }
+    }
+  }
+}

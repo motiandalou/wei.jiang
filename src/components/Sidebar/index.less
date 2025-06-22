@@ -1,0 +1,241 @@
+.ant-layout-sider {
+  height: 100%;
+
+  &.border {
+    border-right: 1px solid var(--keptdata-left-menu-right-border);
+  }
+
+  a {
+    text-decoration: none; /* 取消下划线 */
+  }
+
+  a:hover {
+    text-decoration: none; /* 鼠标划入时也取消下划线 */
+  }
+
+  .ant-layout-sider-children {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .sidebar-header {
+      width: 100%;
+      height: 102px;
+      padding: 0 40px;
+      background: #000;
+      border-bottom: 1px solid var(--keptdata-left-menu-divide);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* 展开 */
+      .collapsed {
+        width: 32px;
+        height: 32px;
+      }
+      /* 收缩 */
+      .contract {
+        width: 80%;
+      }
+    }
+
+    .ant-menu {
+      border-right: none;
+      transition: all 0.2s linear;
+      background-color: #000;
+    }
+  }
+}
+
+.ant-menu-item {
+  padding-left: 28px !important;
+}
+.ant-menu-submenu-title {
+  padding-left: 25px !important;
+}
+/* 第二级子菜单左侧的距离 */
+.ant-menu-item-only-child .ant-menu-title-content {
+  padding-left: 55px;
+}
+
+.side-profile {
+  height: 34%;
+  background: #fafafa;
+  padding: 0.0547rem 0.0586rem;
+  border-radius: 0.0586rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.side-profile .info img {
+  width: 0.2734rem;
+  height: 0.2734rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.side-profile .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.1563rem;
+}
+
+.side-profile .info a {
+  font-weight: bold;
+  margin-top: 0.0586rem;
+  font-size: 0.0781rem;
+}
+
+.side-profile .info p {
+  font-size: 0.0703rem;
+  color: #666869;
+  margin: 0.0391rem 0 0.1172rem;
+}
+
+.side-profile .skills {
+  text-align: center;
+  font-size: 0.0781rem;
+  .skill-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.0704rem 0.0563rem;
+    margin-top: 0.0704rem;
+    padding: 0 0.0781rem;
+  }
+}
+
+.side-profile .skills .skill-tags .item {
+  padding: 0.0391rem;
+  border-radius: 0.0156rem;
+  background: #e7e7e7;
+  font-size: 0.0625rem;
+  font-weight: 500;
+  color: #666869;
+}
+
+.side-profile .classify {
+  font-size: 0.0781rem;
+  a {
+    display: inline-block;
+    margin-top: 0.0781rem;
+    width: 100%;
+    padding: 0.0586rem;
+    background: #111;
+    color: #fafafa;
+    border-radius: 0.0391rem;
+    font-size: 0.0781rem;
+    text-align: center;
+  }
+}
+.net_title {
+  font-size: 0.1406rem;
+  font-weight: 500;
+  color: #eee;
+}
+
+.container {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  padding: 0.1053rem 0.1563rem 0.0977rem 0.1363rem;
+
+  /* Sidebar styles */
+  .sidebar-right {
+    visibility: hidden; /* 初始隐藏 */
+    width: 2.6042rem;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -2.6042rem;
+    background-color: #fff;
+    box-shadow: -0.0141rem 0 0.0352rem rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease, visibility 0s linear 0.3s;
+    z-index: 1001;
+    padding: 0.1408rem;
+    border-top-left-radius: 0.0704rem;
+    border-bottom-left-radius: 0.0704rem;
+  }
+
+  .sidebar-right-header {
+    font-size: 0.1172rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.2113rem;
+  }
+
+  .sidebar-right-box {
+    background-color: rgba(245, 245, 245, 0.8);
+    border-radius: 0.0704rem;
+    padding: 0.0704rem;
+    margin-bottom: 0.2113rem;
+
+    .sidebar-right-content {
+      padding: 0.0586rem;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 500;
+      font-size: 0.1127rem;
+
+      .classify {
+        p {
+          width: 1.4437rem;
+          word-wrap: break-word;
+          color: #000;
+        }
+        span,
+        a {
+          display: inline-flexbox;
+          justify-content: center;
+          align-items: center;
+          border: 0.0078rem solid #000;
+          padding: 0.0195rem;
+          height: 0.1172rem;
+          margin-right: 0.0391rem;
+          border-radius: 0.0195rem;
+          color: #111;
+          &:hover {
+            background-color: #000;
+            color: #fff;
+          }
+        }
+        .btn_click {
+          background-color: #000;
+          color: #fff;
+        }
+      }
+      .icon {
+        margin-right: 0.0469rem;
+      }
+    }
+  }
+
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 0.2113rem;
+    width: 0.2817rem;
+    height: 0.2817rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: #f2f2f2;
+    }
+  }
+
+  /* Sidebar visible class */
+  .sidebar-right.open {
+    right: 0;
+    visibility: visible;
+    transition: right 0.3s ease;
+  }
+}

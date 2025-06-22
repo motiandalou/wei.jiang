@@ -1,0 +1,61 @@
+/* global.less */
+
+/* 重置样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* 平滑滚动 */
+}
+
+body {
+  font-family: "Arial", sans-serif; /* 默认字体 */
+  line-height: 1.6; /* 行高 */
+  background-color: #f4f4f4; /* 背景色 */
+  color: #333; /* 字体颜色 */
+}
+
+/* webkit滚动条定义高宽及背景 */
+::-webkit-scrollbar {
+  /* 滚动条宽度 */
+  width: 6px;
+  /* 滚动条高度 */
+  height: 6px;
+  /* 滚动条轨道的背景颜色 */
+  background-color: #f0f2f5;
+}
+
+/* 定义滑块 */
+::-webkit-scrollbar-thumb {
+  /* 滚动条的圆角 */
+  border-radius: 4px;
+  /* 滚动条的背景颜色 */
+  background-color: #d9d9d9;
+}
+
+/* 链接样式 */
+a {
+  color: #007bff; /* 链接颜色 */
+  text-decoration: none; /* 去掉下划线 */
+}
+
+a:hover {
+  text-decoration: underline; /* 悬停时下划线 */
+}
+
+i {
+  font-style: normal;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+// ----
+// 高度继承
+.inherit-height {
+  height: 100%;
+}
