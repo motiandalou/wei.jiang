@@ -1,45 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
-}
 
-/* 滚动过渡动画 */
-html {
-  scroll-behavior: smooth;
-  overflow: hidden;
-}
 
-h4 {
-  font-size: 0.0938rem !important;
-}
 
-h5 {
-  font-size: 0.082rem !important;
-}
 
-a {
-  text-decoration: none;
-  color: #111;
-  font-size: 0.0547rem;
-}
 
-p {
-  color: #a4a8ac;
-}
 
-body {
-  height: 100vh;
-  font-size: 14px;
-}
 
-.cursor {
-  cursor: pointer;
-}
+
+
 
 /* 默认电脑样式 */
 .computer-only {
@@ -64,7 +32,7 @@ body {
 }
 
 .sidebar-left > a {
-  font-size: 0.1406rem;
+  font-size: 0.4406rem;
   font-weight: 500;
   color: #eee;
 }
@@ -170,21 +138,7 @@ body {
   border-radius: 50%;
 }
 
-.container .nav .user-info {
-  display: flex;
-  align-items: center;
-  gap: 0.0391rem;
-}
 
-.container .nav .user-info i {
-  font-size: 0.2113rem;
-  width: 0.3521rem;
-  height: 0.3521rem;
-  border-radius: 50%;
-  background-color: #e7e7e7;
-  text-align: center;
-  line-height: 0.3521rem;
-}
 
 /* 点击侧边栏按钮切换显示内容 */
 .content {
@@ -428,53 +382,7 @@ body {
   margin-top: 0.1408rem;
 }
 
-/* see more */
-.seeMore {
-  position: relative;
-  bottom: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.0404rem;
-  border: none;
-  overflow: hidden;
-  width: 0.7059rem;
-  height: 0.2017rem;
-}
 
-.seeMore-text {
-  transform: translateX(0.1056rem);
-  font-size: 0.0986rem;
-  font-weight: 700;
-  transition-duration: 0.3s;
-  color: #000;
-}
-
-.iconer {
-  transform: translateY(0.2465rem);
-  transition-duration: 0.3s;
-  color: #000;
-}
-
-/* 设置 SVG 的大小 */
-.seeMore .iconer svg {
-  width: 0.169rem; /* 设置宽度 */
-  height: 0.169rem; /* 设置高度 */
-}
-
-.seeMore:hover .seeMore-text {
-  transform: translateX(0px);
-}
-
-.seeMore:hover .iconer {
-  transform: translateY(0.0141rem);
-}
-
-.ellipsis {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 
 /* 手机样式 */
 @media (max-width: 500px) {

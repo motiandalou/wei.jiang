@@ -7,12 +7,11 @@ function Education() {
   return (
     <>
       <div id="Education" className="content">
-        <ul></ul>
-        <ul className="pagination" id="pagination04"></ul>
+       
 
         <div className="header">
           <h4>{t("wei.educationTitle")}</h4>
-          <p>{t("wei.educationSubTitle")}</p>
+          <p style={{ marginLeft: '.1268rem' }}>{t("wei.educationSubTitle")}</p>
         </div>
 
         <div id="dataListEducation" className="job-cards"></div>

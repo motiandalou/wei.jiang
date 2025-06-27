@@ -48,6 +48,15 @@ export const projectsList = () => {
         content:
           "An npm package for drag and drop functionality Suitable for React/Vue/Angular/Native HTML.",
       },
+      {
+        id: "project06",
+        icon: "ri-google-fill",
+        title: "谷歌扩展插件 ( Auto Video Speed )",
+        time: ["2025-06", "2025-06"],
+        tags: ["Plasmo", "Chrome"],
+        jump: true,
+        content: "网站加速播放.",
+      },
     ],
     EN: [
       {
@@ -97,6 +106,15 @@ export const projectsList = () => {
         jump: "https://www.npmjs.com/package/dragmate",
         content:
           "An npm package for drag and drop functionality suitable for React/Vue/Angular/Native HTML.",
+      },
+      {
+        id: "project06",
+        icon: "ri-google-fill",
+        title: "谷歌扩展插件 ( Auto Video Speed )",
+        time: ["2025-06", "2025-06"],
+        tags: ["Plasmo", "Chrome"],
+        jump: true,
+        content: "网站加速播放.",
       },
     ],
   };

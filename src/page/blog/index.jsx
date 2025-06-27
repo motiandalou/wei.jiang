@@ -7,12 +7,10 @@ function Blog() {
   return (
     <>
       <div id="Blog" className="content">
-        <ul></ul>
-        <ul className="pagination" id="pagination02"></ul>
-
+    
         <div className="header">
           <h4>{t("wei.blogTitle")}</h4>
-          <p>{t("wei.blogSubTitle")}</p>
+          <p style={{ marginLeft: '.1268rem' }}>{t("wei.blogSubTitle")}</p>
         </div>
         <div id="dataListBlog" className="job-cards"></div>
       </div>

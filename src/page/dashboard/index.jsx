@@ -1,16 +1,15 @@
 import "./index.less";
-import "@/utils/flexible.js";
 import { useTranslation } from "react-i18next";
 import React, { useState } from "react";
 import { Button, Drawer } from "antd";
 
-function Login() {
+function Dashboard() {
   // 国际化
   const { t } = useTranslation();
 
   return (
     <>
-      <div className="computer-only">
+      {/* <div className="computer-only">
         <div id="overlay" className="overlay"></div>
         <div id="modal-overlay" style={{ display: "none" }}></div>
         <div id="modal-content" style={{ display: "none" }}>
@@ -19,7 +18,7 @@ function Login() {
           </button>
           <div id="modal-body"></div>
         </div>
-      </div>
+      </div> */}
 
       {/* MOBILE  */}
       <div className="mobile-only">
@@ -89,4 +88,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Dashboard;

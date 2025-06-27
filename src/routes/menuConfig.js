@@ -1,11 +1,11 @@
 import React from "react";
 
+
 // 统一样式
 const buildIcon = (icon) => (
   <span
     style={{
-      width: 16,
-      height: 16,
+      fontSize:'20px',
       display: "inline-block",
       textAlign: "center",
     }}
@@ -17,31 +17,31 @@ const buildIcon = (icon) => (
 const menuItems = [
   // 项目
   {
-    key: "PROJECT",
-    label: "项目",
+    key: "/project",
+    label: "wei.project",
     icon: buildIcon(<i className="ri-list-check-3" />),
-    path: "project",
+    path: "/project",
   },
   // 博客
   {
-    key: "PROJECT",
-    label: "博客",
+    key: "/blog",
+    label: "wei.blog",
     icon: buildIcon(<i className="ri-news-line" />),
-    path: "blog",
+    path: "/blog",
   },
   // 公司
   {
-    key: "PROJECT",
-    label: "公司",
+    key: "/company",
+    label: "wei.company",
     icon: buildIcon(<i className="bx bx-search-alt" />),
-    path: "company",
+    path: "/company",
   },
   // 教育
   {
-    key: "PROJECT",
-    label: "教育",
+    key: "/education",
+    label: "wei.education",
     icon: buildIcon(<i className="ri-school-fill" />),
-    path: "education",
+    path: "/education",
   },
 ];
 

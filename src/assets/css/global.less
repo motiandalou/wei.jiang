@@ -1,21 +1,24 @@
-/* global.less */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 /* 重置样式 */
 * {
   margin: 0;
   padding: 0;
+  outline: none;
   box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth; /* 平滑滚动 */
+  overflow: hidden;
 }
 
 body {
-  font-family: "Arial", sans-serif; /* 默认字体 */
+  font-family: "Ubuntu", "Arial", sans-serif; /* 默认字体 */
   line-height: 1.6; /* 行高 */
   background-color: #f4f4f4; /* 背景色 */
   color: #333; /* 字体颜色 */
+  font-size: 14px;
 }
 
 /* webkit滚动条定义高宽及背景 */
@@ -36,26 +39,177 @@ body {
   background-color: #d9d9d9;
 }
 
-/* 链接样式 */
-a {
-  color: #007bff; /* 链接颜色 */
-  text-decoration: none; /* 去掉下划线 */
+h4 {
+  font-size: 0.0938rem !important;
 }
 
-a:hover {
-  text-decoration: underline; /* 悬停时下划线 */
+h5 {
+  font-size: 0.082rem !important;
+}
+
+/* 链接样式 */
+a {
+  color: #111;
+  text-decoration: none; /* 去掉下划线 */
+  font-size: 0.0547rem;
+}
+
+p {
+  margin: 0;
+  color: #a4a8ac;
 }
 
 i {
   font-style: normal;
 }
 
-.cursor-pointer {
+.cursor {
   cursor: pointer;
 }
 
-// ----
-// 高度继承
-.inherit-height {
-  height: 100%;
+.job-cards {
+  margin-top: 0.1408rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.0781rem;
+  overflow-y: auto;
+  height: 770px;
+}
+
+.job-cards .card {
+  box-shadow: 0 0.0586rem 0.1367rem rgba(0, 0, 0, 0.1);
+  padding: 0.0881rem 0.0881rem 0.0881rem 0.0881rem;
+  border: 0.0078rem solid #f2f2f2;
+  border-radius: 0.0586rem;
+}
+
+.job-cards .card:hover {
+  box-shadow: none;
+}
+
+.job-cards .card .card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.job-cards .card .card-header > i {
+  font-size: 0.0938rem;
+  color: #a4a8ac;
+  cursor: pointer;
+}
+
+.job-cards .card .card-header > i:hover {
+  color: #111;
+}
+
+.job-cards .card .card-header .job-info {
+  display: flex;
+  gap: 0.0391rem;
+  font-size: 0.0781rem;
+}
+
+.job-cards .card .card-header .job-info i {
+  font-size: 0.1828rem;
+  background: #f2f2f2;
+  width: 0.2539rem;
+  height: 0.2639rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.0704rem;
+}
+
+.job-cards .card .card-header .job-info h5 {
+  font-weight: 500;
+}
+
+.job-cards .card .card-header .job-info h5 span {
+  font-size: 0.0703rem;
+  color: #a4a8ac;
+}
+
+.job-cards .card .card-header .job-info a {
+  font-weight: bold;
+  font-size: 0.0703rem;
+  margin-top: 0.0586rem;
+}
+
+.job-cards .card .card-header .job-info p {
+  font-size: 0.0855rem;
+}
+
+.job-cards .card .card-tags {
+  margin: 0.0781rem 0;
+  display: flex;
+  gap: 0.0391rem;
+}
+
+.job-cards .card .card-tags span {
+  font-size: 0.0915rem;
+  background: #f2f2f2;
+  padding: 0.0352rem;
+  border-radius: 0.0282rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.job-cards .card .card-desc {
+  font-size: 0.0781rem;
+  color: #a4a8ac;
+  line-height: 1.5;
+  height: 0.2535rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-bottom: 0.0704rem;
+}
+
+/* see more */
+.seeMore {
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.0404rem;
+  border: none;
+  overflow: hidden;
+  width: 0.7059rem;
+  height: 0.2017rem;
+}
+
+.seeMore-text {
+  transform: translateX(0.1056rem);
+  font-size: 0.0986rem;
+  font-weight: 700;
+  transition-duration: 0.3s;
+  color: #000;
+}
+
+.iconer {
+  transform: translateY(0.2465rem);
+  transition-duration: 0.3s;
+  color: #000;
+}
+
+/* 设置 SVG 的大小 */
+.seeMore .iconer svg {
+  width: 0.169rem; /* 设置宽度 */
+  height: 0.169rem; /* 设置高度 */
+}
+
+.seeMore:hover .seeMore-text {
+  transform: translateX(0px);
+}
+
+.seeMore:hover .iconer {
+  transform: translateY(0.0141rem);
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
