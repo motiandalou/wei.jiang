@@ -1,0 +1,208 @@
+:root {
+    /* 登录页背景颜色 */
+    --keptdata-login-top-bg: #113997;
+    /* 登录页背景图透明度 */
+    --keptdata-login-top-bg-opacity: 1;
+    /* 登录页登录按钮背景颜色 */
+    --keptdata-login-button-bg: #409EFF;
+    /* 登录页登录按钮悬浮背景颜色 */
+    --keptdata-login-button-hover-bg: #66B1FF;
+    /* 登录页登录按钮点击背景颜色 */
+    --keptdata-login-button-active-bg: #3A8EE6;
+    /* 登录页登录按钮禁用背景颜色 */
+    --keptdata-login-button-disabled-bg: #51B2FF;
+
+    /* 头部导航背景颜色 */
+    --keptdata-nav-bg: #113997;
+    /* 头部导航图标颜色 */
+    --keptdata-nav-icon: #FFFFFF;
+    /* 头部导航无背景图标颜色 */
+    --keptdata-nav-icon-nb: #6B84BF;
+    /* 头部导航图标悬浮背景颜色 */
+    --keptdata-nav-icon-hover-bg: #1E48A8;
+    /* 头部导航无背景图标悬浮背景颜色 */
+    --keptdata-nav-icon-hover-nb: #F5F7FC;
+    /* 头部导航头像线条颜色 */
+    --keptdata-nav-head-border: transparent;
+    /* 头部导航头像线条悬浮颜色 */
+    --keptdata-nav-head-hover-border: #2F95FB;
+
+    /* 菜单头部分割线 */
+    --keptdata-left-menu-divide: #1E48A8;
+    /* 菜单头部右侧线条 */
+    --keptdata-left-menu-right-border: #113997;
+    /* 菜单默认文字颜色 */
+    --keptdata-left-menu-text: #A7BEEC;
+    /* 菜单默认图标颜色 */
+    --keptdata-left-menu-icon: #A7BEEC;
+    /* 菜单激活文字颜色 */
+    --keptdata-left-menu-active-text: #FFFFFF;
+    /* 菜单背景颜色 */
+    --keptdata-left-menu-bg: #113997;
+    /* 菜单展开背景颜色 */
+    --keptdata-left-menu-open-bg: #1E48A8;
+    /* 菜单悬浮背景色 */
+    --keptdata-left-menu-hover-bg: #1E48A8;
+    /* 菜单激活背景颜色 */
+    --keptdata-left-menu-item-active-bg: #2F95FB;
+    /* 菜单激活右线条颜色 */
+    --keptdata-left-menu-item-active-right-border: transparent;
+    /* 菜级单文字激活颜色 */
+    --keptdata-left-menu-item-active-text: #FFFFFF;
+
+    /* primary按钮 */
+    --keptdata-primary-button: #2F95FB;
+    /* primary按钮悬浮 */
+    --keptdata-primary-button-hover: #51B2FF;
+    /* primary按钮点击 */
+    --keptdata-primary-button-active: #0777E6;
+    /* primary按钮禁用 */
+    --keptdata-primary-button-disabled: #A0CFFF;
+    /* primary素朴按钮 */
+    --keptdata-primary-button-plain: #FFFFFF;
+    /* primary素朴按钮悬浮 */
+    --keptdata-primary-button-plain-hover: #0777E6;
+    /* primary素朴按钮悬浮背景 */
+    --keptdata-primary-button-plain-hover-bg: #E9F4FF;
+    /* primary素朴按钮点击 */
+    --keptdata-primary-button-plain-active: #0777E6;
+    /* primary素朴按钮点击背景 */
+    --keptdata-primary-button-plain-active-bg: #D5EAFE;
+    /* primary素朴按钮禁用 */
+    --keptdata-primary-button-plain-disabled: #A0CFFF;
+
+    /* danger按钮 */
+    --keptdata-danger-button: #EC2020;
+    /* danger按钮悬浮 */
+    --keptdata-danger-button-hover: #FF6060;
+    /* danger按钮点击 */
+    --keptdata-danger-button-active: #DD1212;
+    /* danger按钮禁用 */
+    --keptdata-danger-button-disabled: #FEACAC;
+    /* danger素朴按钮 */
+    --keptdata-danger-button-plain: #FFFFFF;
+    /* danger素朴按钮悬浮 */
+    --keptdata-danger-button-plain-hover: #EC2020;
+    /* danger素朴按钮悬浮背景 */
+    --keptdata-danger-button-plain-hover-bg: #FDE8E8;
+    /* danger素朴按钮点击 */
+    --keptdata-danger-button-plain-active: #EC2020;
+    /* danger素朴按钮点击背景 */
+    --keptdata-danger-button-plain-active-bg: #F8CECE;
+    /* danger素朴按钮禁用 */
+    --keptdata-danger-button-plain-disabled: #FEACAC;
+
+    /* success按钮 */
+    --keptdata-success-button: #19D7A5;
+    /* success按钮悬浮 */
+    --keptdata-success-button-hover: #37E2B5;
+    /* success按钮点击 */
+    --keptdata-success-button-active: #0EC393;
+    /* success按钮禁用 */
+    --keptdata-success-button-disabled: #8AF5D9;
+    /* success素朴按钮 */
+    --keptdata-success-button-plain: #FFFFFF;
+    /* success素朴按钮悬浮 */
+    --keptdata-success-button-plain-hover: #19D7A5;
+    /* success素朴按钮悬浮背景 */
+    --keptdata-success-button-plain-hover-bg: #EAFCF8;
+    /* success素朴按钮点击 */
+    --keptdata-success-button-plain-active: #19D7A5;
+    /* success素朴按钮点击背景 */
+    --keptdata-success-button-plain-active-bg: #CEF3E9;
+    /* success素朴按钮禁用 */
+    --keptdata-success-button-plain-disabled: #8AF5D9;
+
+    /* 多选框选中背景 */
+    --keptdata-checkbox-checked-bg: #2F95FB;
+    /* 多选框线条色 */
+    --keptdata-checkbox-border: #C0C4CC;
+    /* 多选框线条选中色 */
+    --keptdata-checkbox-checked-border: #2F95FB;
+    /* 单选框选中背景 */
+    --keptdata-radio-checked-bg: #2F95FB;
+    /* 单选框线条色 */
+    --keptdata-radio-border: #C0C4CC;
+    /* 单选框线条选中色 */
+    --keptdata-radio-checked-border: #2F95FB;
+
+    /* success消息弹框背景 */
+    --keptdata-success-message-bg: #E6FAF5;
+    /* success消息弹框线条 */
+    --keptdata-success-message-border: #D1F7ED;
+    /* success消息弹框文字图标 */
+    --keptdata-success-message-text: #19D7A5;
+
+    /* info消息弹框背景 */
+    --keptdata-info-message-bg: #E9F4FF;
+    /* info消息弹框线条 */
+    --keptdata-info-message-border: #D5EAFE;
+    /* info消息弹框文字图标 */
+    --keptdata-info-message-text: #2F95FB;
+
+    /* warn消息弹框背景 */
+    --keptdata-warn-message-bg: #FFF6E9;
+    /* warn消息弹框线条 */
+    --keptdata-warn-message-border: #FFEED3;
+    /* warn消息弹框文字图标 */
+    --keptdata-warn-message-text: #FCAA27;
+
+    /* error消息弹框背景 */
+    --keptdata-error-message-bg: #FDE8E8;
+    /* error消息弹框线条 */
+    --keptdata-error-message-border: #FBD2D2;
+    /* error消息弹框文字图标 */
+    --keptdata-error-message-text: #EC2020;
+
+    /* 详情左竖线 */
+    --keptdata-detail-left-divide: #2F95FB;
+    /* 详情主要图标 */
+    --keptdata-detail-main-icon: #96CAFD;
+    /* 详情标题图标 */
+    --keptdata-detail-title-icon: #2F95FB;
+
+    /* vnc左边菜单栏背景色 */
+    --keptdata-vnc-menu-bg: #113997;
+    /* vnc左边菜单栏块级背景色 */
+    --keptdata-vnc-menu-block-bg: #1E48A8;
+    /* vnc左边菜单栏块级悬浮背景色 */
+    --keptdata-vnc-menu-block-hover-bg: #2F95FB;
+    /* vnc左边菜单栏块级文字颜色 */
+    --keptdata-vnc-menu-block-text: #FFFFFF;
+    /* vnc左边菜单栏块级文字悬浮颜色 */
+    --keptdata-vnc-menu-block-hover-text: #FFFFFF;
+    /* vnc设置背景色 */
+    --keptdata-vnc-bg: #3E4B6F;
+    /* vnc设置弹出层高级块背景色 */
+    --keptdata-vnc-popover-advance-bg: #F4F7FC;
+
+    /* 列的悬浮背景 || 盒模型的悬浮背景 */
+    --keptdata-column-hover: #EAF4FF;
+    /* 列的悬浮线条 || 盒模型的悬浮线条 */
+    --keptdata-column-border-hover: #2F95FB;
+
+    /* 虚拟网卡默认背景色 */
+    --keptdata-nic-bg: #F3F9FF;
+    /* 虚拟网卡默认bond背景色 */
+    --keptdata-nic-bond-bg: #B2DAFF;
+
+    /* 下拉框的禁用色 */
+    --keptdata-select-disabled: #C7CBD5;
+
+    /* 表格前缀图标 */
+    --keptdata-table-prefix-icon: #C6D6F7;
+
+    /* 主要标签颜色 */
+    --keptdata-primary-tag: #2F95FB;
+
+    /* 默认文字 */
+    --keptdata-default-text: #142038;
+    /* 默认图标 */
+    --keptdata-default-icon: #C6D6F7;
+    /* 链接文字 */
+    --keptdata-link-text: #2F95FB;
+    /* 链接禁用文字 */
+    --keptdata-disabled-text: #A0CFFF;
+    /* 白色文字 */
+    --keptdata-white-text: #FFFFFF;
+}
